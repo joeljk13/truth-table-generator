@@ -9,7 +9,7 @@ bools :: [Bool]
 bools = [True, False]
 
 iff :: Bool -> Bool -> Bool
-a `iff` b = (a `implies` b) && (b `implies` a)
+iff = (==)
 
 implies :: Bool -> Bool -> Bool
 a `implies` b = not a || b
